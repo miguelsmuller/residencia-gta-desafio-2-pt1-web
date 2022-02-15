@@ -15,44 +15,49 @@ body {
   flex-direction: column;
 }
 
-<<<<<<< HEAD
-// CABEÇALHO
 header {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8f7669;
+
+  border: 1px solid #000000;
 }
 
-// AGRUPAMENTO DE CONTEUDO
-=======>>>>>>>d068176f39a382fedebde41d147a76ca43fbe30e main {
+header h1 {
+ color: #ffffff;
+}
+
+main {
   flex: 1 1 100%;
   display: flex;
   justify-content: space-around;
   align-content: center;
-  align-items: center;
+  /* align-items: center; */
   width: 100%;
   margin: 0 auto;
 }
 
-<<<<<<< HEAD
-// LISTA DE USUARIOS
 main > aside {
-  flex: 1 1 25%;
+  flex: 1 1 30%;
+  padding: 16px;
+
+  /* height: 100%; */
+  border: 1px solid #000000;
 }
 
-// LISTA DE MENSAGENS
-======= main > aside {
-  flex: 1 1 25%;
-}
->>>>>>>d068176f39a382fedebde41d147a76ca43fbe30e main > div {
-  flex: 1 1 75%;
+main > aside ul {
+  list-style: none;
 }
 
-#footer {
-  flex: 1 1 100%;
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 0 auto;
+main > aside ul li + li  {
+  margin-top: 12px;
+}
+
+main > div {
+  flex: 1 1 70%;
 }
 
 footer {
