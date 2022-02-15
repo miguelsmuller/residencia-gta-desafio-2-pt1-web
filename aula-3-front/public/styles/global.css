@@ -50,3 +50,18 @@ main > div {
   width: 100%;
   margin: 0 auto;
 }
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.input-mensagem {
+  height: 50px;
+  width: 75%;
+}
+
+.button-enviar {
+  height: 50px;
+  width: 20%;
+}
