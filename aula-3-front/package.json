@@ -1,0 +1,14 @@
+{
+  "name": "aula-3-front",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "npx tailwindcss -i ./dist/styles/global.css -o ./dist/styles/style.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.22"
+  }
+}

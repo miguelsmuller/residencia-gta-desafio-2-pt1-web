@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+main > aside {
+  flex: 1 1 25%;
+
+}
+main > div {
+  flex: 1 1 75%;
+}
+
+#footer {
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
