@@ -15,12 +15,13 @@ body {
   flex-direction: column;
 }
 
+<<<<<<< HEAD
 // CABEÇALHO
 header {
 }
 
 // AGRUPAMENTO DE CONTEUDO
-main {
+=======>>>>>>>d068176f39a382fedebde41d147a76ca43fbe30e main {
   flex: 1 1 100%;
   display: flex;
   justify-content: space-around;
@@ -30,17 +31,20 @@ main {
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
 // LISTA DE USUARIOS
 main > aside {
   flex: 1 1 25%;
 }
 
 // LISTA DE MENSAGENS
-main > div {
+======= main > aside {
+  flex: 1 1 25%;
+}
+>>>>>>>d068176f39a382fedebde41d147a76ca43fbe30e main > div {
   flex: 1 1 75%;
 }
 
-// RODAPÉ
 #footer {
   flex: 1 1 100%;
   display: flex;
