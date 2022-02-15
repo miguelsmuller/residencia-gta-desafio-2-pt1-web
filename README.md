@@ -9,7 +9,7 @@
 - Igor Almeida (igor.mottta@gmail.com)
 - Juninho Carlos 
 - Miguel Müller (miguelsmuller@gmail.com)
-- Thais Minas
+- Thais Minas (thaisminasds@gmail.com)
 
 
 ### **Overview**
