@@ -7,34 +7,43 @@
   box-sizing: border-box;
 }
 
+html {
+  --espaco_padrao: 16px;
+  --raio_borda: 15px;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
-  max-height: 100vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  overflow: hidden;
-  max-width: 840px;
-  margin: 0 auto;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  background-color: #f1f5f9;
 }
 
 /*
  * ESQUELETO GERAL
  */
+#wrap {
+  max-height: 100vh;
+  max-width: 840px;
+
+  margin: 0 auto;
+  padding: var(--espaco_padrao) 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
 #cabecalho {
   width: 100%;
+  height: 130px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #8f7669;
   border: 1px solid #000000;
   flex: 0 0 auto;
-  border-radius: 15px;
+  border-radius: var(--raio_borda);
   margin-bottom: 5px;
-  height: 200px;
 }
 
 #container {
@@ -47,12 +56,19 @@ body {
   margin: 0 auto;
 }
 
+.header-icon {
+  margin-right: var(--espaco_padrao);
+  height: 62px;
+  fill: #e5e7eb;
+}
+
 main > aside {
   padding: 16px;
   flex: 1 1 25%;
   border: 1px solid #000000;
-  border-radius: 15px;
+  border-radius: var(--raio_borda);
   margin-right: 5px;
+  background-color: white;
 }
 
 #lista_messagens {
@@ -60,13 +76,16 @@ main > aside {
   overflow-y: scroll;
   padding: 10px;
   border: 1px solid #000000;
-  border-radius: 15px;
+  border-radius: var(--raio_borda) 0px 0px var(--raio_borda);
   margin-left: 5px;
+  background-color: white;
 }
 
 footer {
   margin-top: 5px;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 /*
@@ -93,6 +112,7 @@ main > aside ul li + li {
 .lista_messagens {
   width: 100%;
   list-style: none;
+  padding: var(--espaco_padrao);
 }
 .lista_messagens .lista_messagens__item {
   padding-bottom: 10px;
@@ -114,7 +134,6 @@ main > aside ul li + li {
  */
 footer form {
   margin-top: 12px;
-  /* width: 100%; */
   display: flex;
   justify-content: space-between;
   flex: 0 0 auto;
@@ -123,11 +142,18 @@ footer form {
   height: 50px;
   width: 75%;
   padding: 8px;
-  border-radius: 15px;
+  border-radius: var(--raio_borda);
+  border: 1px solid black;
 }
 
 .button-enviar {
   height: 50px;
   width: 20%;
-  border-radius: 15px;
+  border-radius: var(--raio_borda);
+  border: 1px solid black;
+}
+
+.button-icon {
+  height: 16px;
+  width: 16px;
 }
