@@ -1,0 +1,254 @@
+[
+  {
+    "group": {
+      "data": [
+        {
+          "group_id": 12,
+          "name": "Chat Sinistro da Equipe 1"
+        }
+      ]
+    }
+  },
+  {
+    "userFromGroup": {
+      "data": [
+        {
+          "group_id": 12,
+          "user": {
+            "user_id": 1,
+            "nickname": "Bruno",
+            "email": "Bruno@gta.com"
+          }
+        },
+        {
+          "group_id": 12,
+          "user": {
+            "user_id": 2,
+            "nickname": "Miguel",
+            "email": "miguel@gta.com"
+          }
+        },
+        {
+          "group_id": 12,
+          "user": {
+            "user_id": 3,
+            "nickname": "Thais",
+            "email": "thais@gta.com"
+          }
+        },
+        {
+          "group_id": 12,
+          "user": {
+            "user_id": 4,
+            "nickname": "Junior",
+            "email": "junior@gta.com"
+          }
+        },
+        {
+          "group_id": 12,
+          "user": {
+            "user_id": 5,
+            "nickname": "Igor",
+            "email": "igor@gta.com"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "message": {
+      "data": [
+        {
+          "date": "2022-02-19 15:30:01",
+          "message": "Ipsum ea eu deserunt nisi mollit duis laborum deserunt. Veniam magna voluptate veniam elit fugiat. Ex consectetur ex ex ut aliqua magna sunt amet qui nisi et et veniam minim.",
+          "group_id": 12,
+          "user": {
+            "user_id": 3,
+            "nickname": "Thais",
+            "email": "thais@gta.com"
+          }
+        },
+        {
+          "date": "2022-02-19 15:32:50",
+          "message": "Ipsum ea eu deserunt nisi mollit duis laborum deserunt. Veniam magna voluptate veniam elit fugiat. Ex consectetur ex ex ut aliqua magna sunt amet qui nisi et et veniam minim.",
+          "group_id": 12,
+          "user": {
+            "user_id": 2,
+            "nickname": "Miguel",
+            "email": "miguel@gta.com"
+          }
+        },
+        {
+          "date": "2022-02-19 15:33:05",
+          "message": "Ipsum ea eu deserunt nisi mollit duis laborum deserunt. Veniam magna voluptate veniam elit fugiat. Ex consectetur ex ex ut aliqua magna sunt amet qui nisi et et veniam minim.",
+          "group_id": 12,
+          "user": {
+            "user_id": 4,
+            "nickname": "Junior",
+            "email": "junior@gta.com"
+          }
+        },
+        {
+          "date": "2022-02-19 16:30:01",
+          "message": "Ipsum ea eu deserunt nisi mollit duis laborum deserunt. Veniam magna voluptate veniam elit fugiat. Ex consectetur ex ex ut aliqua magna sunt amet qui nisi et et veniam minim.",
+          "group_id": 12,
+          "user": {
+            "user_id": 3,
+            "nickname": "Thais",
+            "email": "thais@gta.com"
+          }
+        },
+        {
+          "date": "2022-02-19 16:32:05",
+          "message": "Ipsum ea eu deserunt nisi mollit duis laborum deserunt. Veniam magna voluptate veniam elit fugiat. Ex consectetur ex ex ut aliqua magna sunt amet qui nisi et et veniam minim.",
+          "group_id": 12,
+          "user": {
+            "user_id": 4,
+            "nickname": "Junior",
+            "email": "junior@gta.com"
+          }
+        },
+        {
+          "date": "2022-02-19 17:02:36",
+          "message": "Ipsum ea eu deserunt nisi mollit duis laborum deserunt. Veniam magna voluptate veniam elit fugiat. Ex consectetur ex ex ut aliqua magna sunt amet qui nisi et et veniam minim.",
+          "group_id": 12,
+          "user": {
+            "user_id": 2,
+            "nickname": "Miguel",
+            "email": "miguel@gta.com"
+          }
+        },
+        {
+          "date": "2022-02-19 17:50:01",
+          "message": "Ipsum ea eu deserunt nisi mollit duis laborum deserunt. Veniam magna voluptate veniam elit fugiat. Ex consectetur ex ex ut aliqua magna sunt amet qui nisi et et veniam minim.",
+          "group_id": 12,
+          "user": {
+            "user_id": 5,
+            "nickname": "Igor",
+            "email": "igor@gta.com"
+          }
+        },
+        {
+          "date": "2022-02-19 19:02:01",
+          "message": "Ipsum ea eu deserunt nisi mollit duis laborum deserunt. Veniam magna voluptate veniam elit fugiat. Ex consectetur ex ex ut aliqua magna sunt amet qui nisi et et veniam minim.",
+          "group_id": 12,
+          "user": {
+            "user_id": 5,
+            "nickname": "Igor",
+            "email": "igor@gta.com"
+          }
+        },
+        {
+          "date": "2022-02-19 19:38:25",
+          "message": "Ipsum ea eu deserunt nisi mollit duis laborum deserunt. Veniam magna voluptate veniam elit fugiat. Ex consectetur ex ex ut aliqua magna sunt amet qui nisi et et veniam minim.",
+          "group_id": 12,
+          "user": {
+            "user_id": 3,
+            "nickname": "Thais",
+            "email": "thais@gta.com"
+          }
+        },
+        {
+          "date": "2022-02-19 19:40:39",
+          "message": "Ipsum ea eu deserunt nisi mollit duis laborum deserunt. Veniam magna voluptate veniam elit fugiat. Ex consectetur ex ex ut aliqua magna sunt amet qui nisi et et veniam minim.",
+          "group_id": 12,
+          "user": {
+            "user_id": 1,
+            "nickname": "Bruno",
+            "email": "Bruno@gta.com"
+          }
+        },
+        {
+          "date": "2022-02-19 19:50:05",
+          "message": "Ipsum ea eu deserunt nisi mollit duis laborum deserunt. Veniam magna voluptate veniam elit fugiat. Ex consectetur ex ex ut aliqua magna sunt amet qui nisi et et veniam minim.",
+          "group_id": 12,
+          "user": {
+            "user_id": 4,
+            "nickname": "Junior",
+            "email": "junior@gta.com"
+          }
+        },
+        {
+          "date": "2022-02-19 19:50:59",
+          "message": "Ipsum ea eu deserunt nisi mollit duis laborum deserunt. Veniam magna voluptate veniam elit fugiat. Ex consectetur ex ex ut aliqua magna sunt amet qui nisi et et veniam minim.",
+          "group_id": 12,
+          "user": {
+            "user_id": 3,
+            "nickname": "Thais",
+            "email": "thais@gta.com"
+          }
+        },
+        {
+          "date": "2022-02-19 19:55:36",
+          "message": "Ipsum ea eu deserunt nisi mollit duis laborum deserunt. Veniam magna voluptate veniam elit fugiat. Ex consectetur ex ex ut aliqua magna sunt amet qui nisi et et veniam minim.",
+          "group_id": 12,
+          "user": {
+            "user_id": 5,
+            "nickname": "Igor",
+            "email": "igor@gta.com"
+          }
+        },
+        {
+          "date": "2022-02-19 19:55:40",
+          "message": "Ipsum ea eu deserunt nisi mollit duis laborum deserunt. Veniam magna voluptate veniam elit fugiat. Ex consectetur ex ex ut aliqua magna sunt amet qui nisi et et veniam minim.",
+          "group_id": 12,
+          "user": {
+            "user_id": 3,
+            "nickname": "Thais",
+            "email": "thais@gta.com"
+          }
+        },
+        {
+          "date": "2022-02-19 20:30:01",
+          "message": "Ipsum ea eu deserunt nisi mollit duis laborum deserunt. Veniam magna voluptate veniam elit fugiat. Ex consectetur ex ex ut aliqua magna sunt amet qui nisi et et veniam minim.",
+          "group_id": 12,
+          "user": {
+            "user_id": 2,
+            "nickname": "Miguel",
+            "email": "miguel@gta.com"
+          }
+        },
+        {
+          "date": "2022-02-19 20:55:01",
+          "message": "Ipsum ea eu deserunt nisi mollit duis laborum deserunt. Veniam magna voluptate veniam elit fugiat. Ex consectetur ex ex ut aliqua magna sunt amet qui nisi et et veniam minim.",
+          "group_id": 12,
+          "user": {
+            "user_id": 1,
+            "nickname": "Bruno",
+            "email": "Bruno@gta.com"
+          }
+        },
+        {
+          "date": "2022-02-19 20:59:01",
+          "message": "Ipsum ea eu deserunt nisi mollit duis laborum deserunt. Veniam magna voluptate veniam elit fugiat. Ex consectetur ex ex ut aliqua magna sunt amet qui nisi et et veniam minim.",
+          "group_id": 12,
+          "user": {
+            "user_id": 4,
+            "nickname": "Junior",
+            "email": "junior@gta.com"
+          }
+        },
+        {
+          "date": "2022-02-19 21:02:01",
+          "message": "Ipsum ea eu deserunt nisi mollit duis laborum deserunt. Veniam magna voluptate veniam elit fugiat. Ex consectetur ex ex ut aliqua magna sunt amet qui nisi et et veniam minim.",
+          "group_id": 12,
+          "user": {
+            "user_id": 2,
+            "nickname": "Miguel",
+            "email": "miguel@gta.com"
+          }
+        },
+        {
+          "date": "2022-02-19 21:05:36",
+          "message": "Ipsum ea eu deserunt nisi mollit duis laborum deserunt. Veniam magna voluptate veniam elit fugiat. Ex consectetur ex ex ut aliqua magna sunt amet qui nisi et et veniam minim.",
+          "group_id": 12,
+          "user": {
+            "user_id": 5,
+            "nickname": "Igor",
+            "email": "igor@gta.com"
+          }
+        }
+      ]
+    }
+  }
+]
