@@ -1,0 +1,9 @@
+.header_title {
+  color: #ffffff;
+}
+
+.header_icon {
+  margin-right: var(--espaco_padrao);
+  height: 62px;
+  fill: #e5e7eb;
+}

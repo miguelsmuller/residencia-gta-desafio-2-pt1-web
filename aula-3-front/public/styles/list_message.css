@@ -1,0 +1,20 @@
+.lista_messagens {
+  width: 100%;
+  list-style: none;
+  padding: var(--espaco_padrao);
+}
+
+.lista_messagens .lista_messagens__item {
+  padding-bottom: 10px;
+}
+
+.lista_messagens .lista_messagens__usuario {
+  font-size: 11px;
+  font-weight: 700;
+}
+.lista_messagens .lista_messagens__item > p {
+  padding: 2px 6px;
+  background-color: #f3f4f6;
+  border-radius: 9px;
+  color: #374151;
+}

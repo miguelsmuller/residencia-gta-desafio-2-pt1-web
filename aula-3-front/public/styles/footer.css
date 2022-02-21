@@ -1,0 +1,19 @@
+.footer_input {
+  height: 50px;
+  width: 75%;
+  padding: 8px;
+  border-radius: var(--raio_borda);
+  border: 1px solid black;
+}
+
+.fotter_enviar {
+  height: 50px;
+  width: 20%;
+  border-radius: var(--raio_borda);
+  border: 1px solid black;
+}
+
+.fotter_enviar .fotter_enviar__icon {
+  height: 16px;
+  width: 16px;
+}

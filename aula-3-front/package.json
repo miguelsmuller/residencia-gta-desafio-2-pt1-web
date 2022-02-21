@@ -4,11 +4,12 @@
   "description": "",
   "private": true,
   "scripts": {
-    "dev": "npx tailwindcss -i ./dist/styles/global.css -o ./dist/styles/style.css --watch"
+    "view": "npx live-server ./public/"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "live-server": "^1.2.1",
     "tailwindcss": "^3.0.22"
   }
 }
