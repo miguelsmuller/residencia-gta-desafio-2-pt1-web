@@ -1,9 +1,8 @@
-const fnSucesso = function (data) {
-  console.log(data);
-}
+'use strict';
 
 function onLoad_getMessages() {
   function fnSucesso({ data }) {
+    console.log('get-message');
     data.map(function (list) {
       const { user, message } = list
       createComponentMessage(user.nickname, message);
@@ -27,13 +26,11 @@ function createComponentMessage(userMenssage, mensagem) {
   listMensagem.appendChild(novaMensagem);
 }
 
-
 //==================================================================
-
-
 
 function onLoad_getUsuarios() {
   function fnSucesso({ data }) {
+    console.log('get-user');
     data.map(function (list) {
       const { user } = list;
       createComponentUsuario(user.nickname);
