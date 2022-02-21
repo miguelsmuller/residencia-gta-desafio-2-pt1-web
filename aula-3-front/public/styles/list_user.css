@@ -1,0 +1,7 @@
+.lista_usuarios {
+  list-style: none;
+}
+
+.lista_usuarios li + li {
+  margin-top: 12px;
+}
