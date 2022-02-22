@@ -1,12 +1,23 @@
-'use strict';
+"use strict";
 
-function onLoad_getMessages() {
+var chat;
+
+var animatedChat = setInterval(function () {
+  if (chat && chat.length > 0) {
+    var receivedMessage = chat.pop();
+    createComponentMessage(
+      receivedMessage.user.nickname,
+      receivedMessage.message
+    );
+  }
+  if (chat && chat.length == 0) {    
+    onLoadGetMessages();
+  }
+}, 1000);
+
+function onLoadGetMessages() {
   function fnSucesso({ data }) {
-    console.log('get-message');
-    data.map(function (list) {
-      const { user, message } = list
-      createComponentMessage(user.nickname, message);
-    });
+    chat = data;
   }
 
   useFetch(routes.mensagem, { fnSucesso }, {});
@@ -15,22 +26,22 @@ function onLoad_getMessages() {
 function createComponentMessage(userMenssage, mensagem) {
   let content = `
     <span class="lista_messagens__usuario">${userMenssage}</span>
-    <p>${mensagem}</p>`
+    <p>${mensagem}</p>`;
 
   let listMensagem = document.querySelector(".lista_messagens");
-  let novaMensagem = document.createElement("li")
+  let novaMensagem = document.createElement("li");
 
   novaMensagem.className = "lista_messagens__item";
   novaMensagem.innerHTML = content;
 
   listMensagem.appendChild(novaMensagem);
+  updateScroll()
 }
 
 //==================================================================
 
-function onLoad_getUsuarios() {
+function onLoadGetUsuarios() {
   function fnSucesso({ data }) {
-    console.log('get-user');
     data.map(function (list) {
       const { user } = list;
       createComponentUsuario(user.nickname);
@@ -42,25 +53,45 @@ function onLoad_getUsuarios() {
 
 function createComponentUsuario(userName) {
   var listUsuarios = document.getElementById("lista_usuarios");
-  var novoUsuario = document.createElement("li")
+  var novoUsuario = document.createElement("li");
   novoUsuario.innerHTML = userName;
   listUsuarios.appendChild(novoUsuario);
 }
 
 //==================================================================
 
-function onLoad_buttonEnviar() {
-  let buttonEnviar = document.getElementById("button_enviar");
-  buttonEnviar.onclick = function () { sendMessage() };
-}
-function sendMessage() {
-  var user = { name: "Igor" };
-  let inputMensagem = document.getElementById("input-mensagem");
-  createComponentMessage(user.name, inputMensagem.value)
+function onLoadButtonEnviar() {
+  let buttonEnviar = document.getElementById("button_enviar")
+  let inputMensagem = document.getElementById("input-mensagem")
+
+  buttonEnviar.onclick = function () {
+    sendMessage()
+  };
+  inputMensagem.onkeyup = function (event) {
+    if (event.key === "Enter") {
+      sendMessage()
+    }
+  }
 }
 
-window.addEventListener('load', function () {
-  onLoad_buttonEnviar();
-  onLoad_getUsuarios();
-  onLoad_getMessages();
-})
+function sendMessage() {
+  var user = { name: "Igor" };
+  let inputMensagem = document.getElementById("input-mensagem")
+
+  createComponentMessage(user.name, inputMensagem.value)
+
+  inputMensagem.value = ""
+  inputMensagem.focus()
+  updateScroll()
+}
+
+function updateScroll() {
+  var sklListMessage = document.querySelector(".skl_list_message");
+  sklListMessage.scrollTop = sklListMessage.scrollHeight;
+}
+
+window.addEventListener("load", function () {
+  onLoadButtonEnviar();
+  onLoadGetUsuarios();
+  onLoadGetMessages();
+});

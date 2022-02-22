@@ -1,73 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Chat Sinistro da Equipe 1</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="styles/global.css" rel="stylesheet" type="text/css" />
-    <link href="styles/skeleton.css" rel="stylesheet" type="text/css" />
-    <link href="styles/header.css" rel="stylesheet" type="text/css" />
-    <link href="styles/list_user.css" rel="stylesheet" type="text/css" />
-    <link href="styles/list_message.css" rel="stylesheet" type="text/css" />
-    <link href="styles/footer.css" rel="stylesheet" type="text/css" />
-  </head>
+  <title>Chat Sinistro da Equipe 1</title>
 
-  <body>
-    <div id="wrap">
-      <header class="skl_header">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="header_icon"
-          viewBox="0 0 640 512"
-        >
+  <link href="styles/global.css" rel="stylesheet" type="text/css" />
+  <link href="styles/skeleton.css" rel="stylesheet" type="text/css" />
+  <link href="styles/header.css" rel="stylesheet" type="text/css" />
+  <link href="styles/list_user.css" rel="stylesheet" type="text/css" />
+  <link href="styles/list_message.css" rel="stylesheet" type="text/css" />
+  <link href="styles/footer.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="wrap">
+    <header class="skl_header">
+      <svg xmlns="http://www.w3.org/2000/svg" class="header_icon" viewBox="0 0 640 512">
+        <path
+          d="M416 176C416 78.8 322.9 0 208 0S0 78.8 0 176c0 39.57 15.62 75.96 41.67 105.4c-16.39 32.76-39.23 57.32-39.59 57.68c-2.1 2.205-2.67 5.475-1.441 8.354C1.9 350.3 4.602 352 7.66 352c38.35 0 70.76-11.12 95.74-24.04C134.2 343.1 169.8 352 208 352C322.9 352 416 273.2 416 176zM599.6 443.7C624.8 413.9 640 376.6 640 336C640 238.8 554 160 448 160c-.3145 0-.6191 .041-.9336 .043C447.5 165.3 448 170.6 448 176c0 98.62-79.68 181.2-186.1 202.5C282.7 455.1 357.1 512 448 512c33.69 0 65.32-8.008 92.85-21.98C565.2 502 596.1 512 632.3 512c3.059 0 5.76-1.725 7.02-4.605c1.229-2.879 .6582-6.148-1.441-8.354C637.6 498.7 615.9 475.3 599.6 443.7z" />
+      </svg>
+
+      <h1 class="header_title">Chat Sinistro da Equipe 1</h1>
+    </header>
+
+    <main id="container">
+      <aside class="skl_list_user">
+        <ul id="lista_usuarios" class="lista_usuarios"></ul>
+      </aside>
+
+      <div class="skl_list_message">
+        <ul id="" class="lista_messagens"></ul>
+      </div>
+    </main>
+
+    <footer class="skl_footer">
+      <div class="footer_user">
+        Igor
+      </div>
+      <input class="footer_input" type="text" name="" id="input-mensagem" placeholder="mensagem" />
+
+      <button class="fotter_enviar" id="button_enviar">
+        Enviar
+        <svg xmlns="http://www.w3.org/2000/svg" class="fotter_enviar__icon" viewBox="0 0 512 512">
           <path
-            d="M416 176C416 78.8 322.9 0 208 0S0 78.8 0 176c0 39.57 15.62 75.96 41.67 105.4c-16.39 32.76-39.23 57.32-39.59 57.68c-2.1 2.205-2.67 5.475-1.441 8.354C1.9 350.3 4.602 352 7.66 352c38.35 0 70.76-11.12 95.74-24.04C134.2 343.1 169.8 352 208 352C322.9 352 416 273.2 416 176zM599.6 443.7C624.8 413.9 640 376.6 640 336C640 238.8 554 160 448 160c-.3145 0-.6191 .041-.9336 .043C447.5 165.3 448 170.6 448 176c0 98.62-79.68 181.2-186.1 202.5C282.7 455.1 357.1 512 448 512c33.69 0 65.32-8.008 92.85-21.98C565.2 502 596.1 512 632.3 512c3.059 0 5.76-1.725 7.02-4.605c1.229-2.879 .6582-6.148-1.441-8.354C637.6 498.7 615.9 475.3 599.6 443.7z"
-          />
+            d="M511.6 36.86l-64 415.1c-1.5 9.734-7.375 18.22-15.97 23.05c-4.844 2.719-10.27 4.097-15.68 4.097c-4.188 0-8.319-.8154-12.29-2.472l-122.6-51.1l-50.86 76.29C226.3 508.5 219.8 512 212.8 512C201.3 512 192 502.7 192 491.2v-96.18c0-7.115 2.372-14.03 6.742-19.64L416 96l-293.7 264.3L19.69 317.5C8.438 312.8 .8125 302.2 .0625 289.1s5.469-23.72 16.06-29.77l448-255.1c10.69-6.109 23.88-5.547 34 1.406S513.5 24.72 511.6 36.86z" />
         </svg>
+      </button>
+    </footer>
+  </div>
 
-        <h1 class="header_title">Chat Sinistro da Equipe 1</h1>
-      </header>
+  <script src="scripts/api.js"></script>
+  <script src="scripts/routes.js"></script>
+  <script src="scripts/useFech.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
 
-      <main id="container">
-        <aside class="skl_list_user">
-          <ul id="lista_usuarios" class="lista_usuarios"></ul>
-        </aside>
-
-        <div class="skl_list_message">
-          <ul id="" class="lista_messagens"></ul>
-        </div>
-      </main>
-
-      <footer class="skl_footer">
-        <input
-          class="footer_input"
-          type="text"
-          name=""
-          id="input-mensagem"
-          placeholder="mensagem"
-        />
-
-        <button class="fotter_enviar" id="button_enviar">
-          Enviar
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="fotter_enviar__icon"
-            viewBox="0 0 512 512"
-          >
-            <path
-              d="M511.6 36.86l-64 415.1c-1.5 9.734-7.375 18.22-15.97 23.05c-4.844 2.719-10.27 4.097-15.68 4.097c-4.188 0-8.319-.8154-12.29-2.472l-122.6-51.1l-50.86 76.29C226.3 508.5 219.8 512 212.8 512C201.3 512 192 502.7 192 491.2v-96.18c0-7.115 2.372-14.03 6.742-19.64L416 96l-293.7 264.3L19.69 317.5C8.438 312.8 .8125 302.2 .0625 289.1s5.469-23.72 16.06-29.77l448-255.1c10.69-6.109 23.88-5.547 34 1.406S513.5 24.72 511.6 36.86z"
-            />
-          </svg>
-        </button>
-      </footer>
-    </div>
-
-    <script src="scripts/api.js"></script>
-    <script src="scripts/routes.js"></script>
-    <script src="scripts/useFech.js"></script>
-    <script src="scripts/main.js"></script>
-  </body>
 </html>
