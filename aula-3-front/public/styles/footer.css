@@ -1,6 +1,18 @@
+.footer_user {
+  height: 50px;
+  width: 25%;
+  padding: 8px;
+  border-radius: var(--raio_borda);
+  border: 1px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer_input {
   height: 50px;
-  width: 75%;
+  width: 53%;
   padding: 8px;
   border-radius: var(--raio_borda);
   border: 1px solid black;
